@@ -13,7 +13,13 @@ type Handler struct {
 
 func (h *Handler) HealthHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(map[string]string{"status": "UP"})
+	w.WriteHeader(http.StatusOK)
+
+	// A standard response format for health checks
+	response := map[string]string{
+		"status": "UP",
+	}
+	json.NewEncoder(w).Encode(response)
 }
 
 func (h *Handler) OptimizeHandler(w http.ResponseWriter, r *http.Request) {
