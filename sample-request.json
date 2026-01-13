@@ -1,0 +1,36 @@
+{
+  "truck": {
+    "id": "truck-123",
+    "max_weight_lbs": 44000,
+    "max_volume_cuft": 3000
+  },
+  "orders": [
+    {
+      "id": "ord-001",
+      "weight_lbs": 15000,
+      "volume_cuft": 1000,
+      "payout_cents": 200000,
+      "is_hazmat": false,
+      "pickup_date": 1705140000,
+      "delivery_date": 1705226400
+    },
+    {
+      "id": "ord-002",
+      "weight_lbs": 15000,
+      "volume_cuft": 1100,
+      "payout_cents": 230000,
+      "is_hazmat": false,
+      "pickup_date": 1705140000,
+      "delivery_date": 1705226400
+    },
+    {
+      "id": "ord-003",
+      "weight_lbs": 5000,
+      "volume_cuft": 400,
+      "payout_cents": 500000,
+      "is_hazmat": true,
+      "pickup_date": 1705140000,
+      "delivery_date": 1705226400
+    }
+  ]
+}
