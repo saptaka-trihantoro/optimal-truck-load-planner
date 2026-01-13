@@ -30,7 +30,6 @@ type LoadResponse struct {
 	UtilizationWeightPercent float64  `json:"utilization_weight_percent"`
 	UtilizationVolumePercent float64  `json:"utilization_volume_percent"`
 }
-
 type Optimizer interface {
 	FindBestLoad(truck Truck, orders []Order) LoadResponse
 }
