@@ -6,8 +6,8 @@ type Order struct {
 	VolumeCuft   int    `json:"volume_cuft"`
 	PayoutCents  int64  `json:"payout_cents"`
 	IsHazmat     bool   `json:"is_hazmat"`
-	PickupDate   int64  `json:"pickup_date"`
-	DeliveryDate int64  `json:"delivery_date"`
+	PickupDate   string `json:"pickup_date"`
+	DeliveryDate string `json:"delivery_date"`
 }
 
 type Truck struct {
